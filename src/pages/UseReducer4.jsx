@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import react, { useReducer } from "react";
 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -13,17 +13,16 @@ const reducer = (state, action) => {
     }
 }
 
-const useReducer4 = () => {
-    const [count, dispatch] = useReducer(reducer, { count: 0 })
-
+const UseReducer4 = () => {
+    const [state, dispatch] = useReducer(reducer, { count: 0 });
     return (
-        < div >
-            <h1>Count:{state.count}</h1>
-            <button onClick={dispatch({ type: 'increment' })}>Increment</button>
-            <button onClick={dispatch({ type: 'decrement' })}> Decrement</button >
-            <button onClick={dispatch({ type: 'reset' })}> Reset</button >
+        <div>
+            <h1 className="text-center text-2xl bg-gray-200 mb-2">Count:<strong className="p-4 text-red-800">{state.count}</strong></h1>
+            <button className='bg-red-400 p-2 hover:bg-red-500 mr-2' onClick={() => dispatch({ type: 'increment' })}>Increment</button>
+            <button className='bg-green-400 p-2 hover:bg-green-500 mr-2' onClick={() => dispatch({ type: 'decrement' })}>Decrement</button>
+            <button className='bg-blue-400 p-2 hover:bg-blue-500' onClick={() => dispatch({ type: 'reset' })}>Reset</button>
         </div >
-    )
+    );
 }
 
-export default useReducer4
+export default UseReducer4

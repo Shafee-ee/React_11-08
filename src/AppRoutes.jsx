@@ -12,6 +12,7 @@ import UseReduce from "./pages/UseReduce";
 import UseReducer2 from "./pages/UseReducer2";
 import UseReducer3 from "./pages/UseReducer3";
 import UseReducer4 from "./pages/UseReducer4";
+import UseRef from "./pages/UseRef";
 
 export default function AppRoutes() {
     return (
@@ -28,6 +29,7 @@ export default function AppRoutes() {
             <Route path="useReducer2" element={<UseReducer2 />} />
             <Route path="useReducer3" element={<UseReducer3 />} />
             <Route path="useReducer4" element={<UseReducer4 />} />
+            <Route path="useRef" element={<UseRef />} />
 
         </Routes>
     )

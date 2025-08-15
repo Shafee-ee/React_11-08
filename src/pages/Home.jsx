@@ -18,6 +18,7 @@ const Home = () => {
             <button onClick={() => navigate("/useReducer2")} className='p-2 bg-green-100 hover:bg-green-200 ml-2'>use Reduce 2</button>
             <button onClick={() => navigate("/useReducer3")} className='p-2 bg-green-100 hover:bg-green-200 ml-2'>use Reduce 3</button>
             <button onClick={() => navigate("/useReducer4")} className='p-2 bg-green-100 hover:bg-green-200 ml-2'>use Reduce 4</button>
+            <button onClick={() => navigate("/useRef")} className='p-2 bg-green-100 hover:bg-green-200 ml-2'>use Ref Example</button>
 
         </div>
     )
