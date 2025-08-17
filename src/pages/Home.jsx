@@ -19,6 +19,14 @@ const Home = () => {
             <button onClick={() => navigate("/useReducer3")} className='p-2 bg-green-100 hover:bg-green-200 ml-2'>use Reduce 3</button>
             <button onClick={() => navigate("/useReducer4")} className='p-2 bg-green-100 hover:bg-green-200 ml-2'>use Reduce 4</button>
             <button onClick={() => navigate("/useRef")} className='p-2 bg-green-100 hover:bg-green-200 ml-2'>use Ref Example</button>
+            <button onClick={() => navigate("/useRefOTP")} className='p-2 bg-green-100 hover:bg-green-200 ml-2'>use Ref OTP Input</button>
+            <button onClick={() => navigate("/useRefScroll")} className='p-2 bg-green-100 hover:bg-green-200 ml-2'>use Ref Scroll </button>
+            <button onClick={() => navigate("/useRefStopWatch")} className='p-2 bg-green-100 hover:bg-green-200 ml-2'>use Ref Stop Watch </button>
+            <button onClick={() => navigate("/useRefFocus")} className='p-2 bg-green-100 hover:bg-green-200 ml-2'>use Ref Focus </button>
+            <button onClick={() => navigate("/useMemo")} className='p-2 bg-green-100 hover:bg-green-200 ml-2'>use Memo </button>
+            <button onClick={() => navigate("/useMemoFilter")} className='p-2 bg-green-100 hover:bg-green-200 ml-2'>use Memo Filter </button>
+            <button onClick={() => navigate("/useMemoDD")} className='p-2 bg-green-100 hover:bg-green-200 ml-2'>use Memo Derived Data </button>
+            <button onClick={() => navigate("/useMemoChild")} className='p-2 bg-green-100 hover:bg-green-200 ml-2'>use Memo Child </button>
 
         </div>
     )

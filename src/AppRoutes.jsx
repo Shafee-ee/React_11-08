@@ -13,6 +13,14 @@ import UseReducer2 from "./pages/UseReducer2";
 import UseReducer3 from "./pages/UseReducer3";
 import UseReducer4 from "./pages/UseReducer4";
 import UseRef from "./pages/UseRef";
+import UseRefOTP from "./pages/UseRefOTP";
+import UseRefScroll from './pages/UseRefScroll';
+import UseRefStopWatch from "./pages/UseRefStopWatch";
+import UseRefFocus from "./pages/UseRefFocus";
+import UseMemo from "./pages/UseMemo";
+import UseMemoFilter from "./pages/UseMemoFilter";
+import UseMemoDD from "./pages/UseMemoDD";
+import UseMemoChild from "./pages/UseMemoChild";
 
 export default function AppRoutes() {
     return (
@@ -30,6 +38,14 @@ export default function AppRoutes() {
             <Route path="useReducer3" element={<UseReducer3 />} />
             <Route path="useReducer4" element={<UseReducer4 />} />
             <Route path="useRef" element={<UseRef />} />
+            <Route path="useRefOTP" element={<UseRefOTP />} />
+            <Route path="useRefScroll" element={<UseRefScroll />} />
+            <Route path="useRefStopWatch" element={<UseRefStopWatch />} />
+            <Route path="useRefFocus" element={<UseRefFocus />} />
+            <Route path="useMemo" element={<UseMemo />} />
+            <Route path="useMemoFilter" element={<UseMemoFilter />} />
+            <Route path="useMemoDD" element={<UseMemoDD />} />
+            <Route path="useMemoChild" element={<UseMemoChild />} />
 
         </Routes>
     )
