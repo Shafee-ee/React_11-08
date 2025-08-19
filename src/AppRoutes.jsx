@@ -21,6 +21,10 @@ import UseMemo from "./pages/UseMemo";
 import UseMemoFilter from "./pages/UseMemoFilter";
 import UseMemoDD from "./pages/UseMemoDD";
 import UseMemoChild from "./pages/UseMemoChild";
+import UseMemoBoss from "./pages/UseMemoBoss";
+import UseCallBack from "./pages/UseCallBack";
+import UseCallBackFilter from "./pages/UseCallBackFilter";
+import UseCallbackApi from "./pages/UseCallbackApi";
 
 export default function AppRoutes() {
     return (
@@ -46,6 +50,10 @@ export default function AppRoutes() {
             <Route path="useMemoFilter" element={<UseMemoFilter />} />
             <Route path="useMemoDD" element={<UseMemoDD />} />
             <Route path="useMemoChild" element={<UseMemoChild />} />
+            <Route path='useMemoBoss' element={<UseMemoBoss />} />
+            <Route path='useCallBack' element={<UseCallBack />} />
+            <Route path='useCallBackFilter' element={<UseCallBackFilter />} />
+            <Route path='useCallBackApi' element={<UseCallbackApi />} />
 
         </Routes>
     )

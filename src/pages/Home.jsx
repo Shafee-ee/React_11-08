@@ -27,6 +27,10 @@ const Home = () => {
             <button onClick={() => navigate("/useMemoFilter")} className='p-2 bg-green-100 hover:bg-green-200 ml-2'>use Memo Filter </button>
             <button onClick={() => navigate("/useMemoDD")} className='p-2 bg-green-100 hover:bg-green-200 ml-2'>use Memo Derived Data </button>
             <button onClick={() => navigate("/useMemoChild")} className='p-2 bg-green-100 hover:bg-green-200 ml-2'>use Memo Child </button>
+            <button onClick={() => navigate("/useMemoBoss")} className='p-2 bg-green-100 hover:bg-green-200 ml-2'>use Memo Boss </button>
+            <button onClick={() => navigate("/useCallBack")} className='p-2 bg-green-100 hover:bg-green-200 ml-2'>use Call back </button>
+            <button onClick={() => navigate("/useCallBackFilter")} className='p-2 bg-green-100 hover:bg-green-200 ml-2'>use Callback Filter </button>
+            <button onClick={() => navigate("/useCallBackApi")} className='p-2 bg-green-100 hover:bg-green-200 ml-2'>use Callback API </button>
 
         </div>
     )

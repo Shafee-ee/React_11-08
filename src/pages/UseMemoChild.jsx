@@ -1,8 +1,10 @@
 import React, { useState, useMemo } from 'react';
 
-const Child = React.memo(({ style }) => {
+const Child = React.memo(({ style, count, darkMode, setDarkMode }) => {
     console.log('Child Rendered');
-    return <div style={style}>I am the child</div>
+    return (<div style={style}>I am the child [{count}]<p>Theme:[{darkMode ? 'Dark' : 'Light'}]</p></div>
+
+    )
 })
 
 const UseMemoChild = () => {
@@ -11,8 +13,8 @@ const UseMemoChild = () => {
 
     const style = useMemo(() => {
         return {
-            backgroundColor: darkMode ? 'black' : 'white',
-            color: darkMode ? 'white' : 'black',
+            backgroundColor: darkMode ? 'aliceblue' : 'black',
+            color: darkMode ? 'black' : 'white',
             padding: '10px',
             margin: '10px'
         }
@@ -20,10 +22,10 @@ const UseMemoChild = () => {
 
     return (
         <div>
-            <button onClick={() => setCount(count + 1)}>Increment Count ({count})</button>
+            <button className='bg-green-300 p-4 hover:bg-green-500 hover:rounded' onClick={() => setCount(count + 1)}>Increment Count</button>
             <br />
-            <button onClick={() => setDarkMode(!darkMode)}>Toggle Theme[{darkMode ? 'Dark' : 'Light'}]</button>
-            <Child style={style} />
+            <button className='bg-blue-300 p-4 hover:bg-blue-500' onClick={() => setDarkMode(!darkMode)}>Toggle Theme[{darkMode ? 'Dark' : 'Light'}]</button>
+            <Child style={style} count={count} darkMode={darkMode} />
         </div>
     )
 }
