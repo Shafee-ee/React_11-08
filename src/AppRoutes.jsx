@@ -25,6 +25,7 @@ import UseMemoBoss from "./pages/UseMemoBoss";
 import UseCallBack from "./pages/UseCallBack";
 import UseCallBackFilter from "./pages/UseCallBackFilter";
 import UseCallbackApi from "./pages/UseCallbackApi";
+import UseContext from "./pages/UseContext";
 
 export default function AppRoutes() {
     return (
@@ -54,7 +55,7 @@ export default function AppRoutes() {
             <Route path='useCallBack' element={<UseCallBack />} />
             <Route path='useCallBackFilter' element={<UseCallBackFilter />} />
             <Route path='useCallBackApi' element={<UseCallbackApi />} />
-
+            <Route path="useContext" element={<UseContext />} />
         </Routes>
     )
 }
